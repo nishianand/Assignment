@@ -10,7 +10,6 @@ def getQuery():
         f'https://www.goodreads.com/book/show/{bookID}?format=xml&key=mbNAjKhzOfh6FwOXAeBrg')
     return metadataURL
 
-
 def get_book_details(metadataURL):
     tree2 = ET.parse(metadataURL)
     root2 = tree2.getroot()
