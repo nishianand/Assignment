@@ -15,7 +15,7 @@ Run the command python3 assignment.py
 we will get the details of the book.
 
 (VerloopAssignment) nishianand@Nishis-MacBook-Air bookdetails % python3 assignment.py
-Enter the book_url:query =https://www.goodreads.com/book/show/12177850-a-song-of-ice-and-fire
+Enter the book_url:https://www.goodreads.com/book/show/12177850-a-song-of-ice-and-fire
 {'title': 'A Song of Ice and Fire', 
 'average_rating': '4.57', 
 'ratings_count': '27752', 
