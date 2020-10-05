@@ -8,7 +8,7 @@ Enter the book_url:query =https://www.goodreads.com/book/show/12177850-a-song-of
 
 * queryone= query.split("-")[0] -> it will split the url into two halves at ( - ) , and we are accepting the 1st half i.e. https://www.goodreads.com/book/show/12177850
 
-* bookID=queryone.rsplit('/',1)[1] -> After that i have split the queryone from the right side using rsplit at ('/') , and accepts the 2nd half which is our book id.
+* bookID=queryone.rsplit('/',1)[1] -> After that i have split the queryone from the right side using rsplit at ('/') , and accepts the 2nd half which is our book id , bookID=12177850.
 
 Run the command python3 assignment.py
 
