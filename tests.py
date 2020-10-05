@@ -1,6 +1,7 @@
 import requests
+import unittest
 
-class BookDetailTestView():
+class BookDetailTestView(unittest.TestCase):
     def setUp(self):
        
         self.valid_payload = {
@@ -17,6 +18,11 @@ class BookDetailTestView():
        
     def test_url_get(self):
         response = requests.get('https://www.goodreads.com/book/show/12177850-a-song-of-ice-and-fire')
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.status_code, 200)
+
+
+if __name__ == '__main__':
+    unittest.main()
+        
         
 
