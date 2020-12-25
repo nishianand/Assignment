@@ -1,13 +1,16 @@
 from urllib.request import urlopen
 import xml.etree.ElementTree as ET
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 
 def getQuery():
     query = input('Enter the book_url:' )
     queryone= query.split("-")[0]
     bookID=queryone.rsplit('/',1)[1]
+    
     metadataURL = urlopen(
-        f'https://www.goodreads.com/book/show/{bookID}?format=xml&key=mbNAjKhzOfh6FwOXAeBrg')
+        f'https://www.goodreads.com/book/show/{bookID}?format=xml&key=ziYPtIKPEmE7QtFTEJNANg')
     return metadataURL
 
 def get_book_details(metadataURL):
